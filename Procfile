@@ -1,0 +1,1 @@
+web: gunicorn aniversario_campus_pelotas.wsgi

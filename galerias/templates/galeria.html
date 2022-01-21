@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section id="titulo">
+        <h1 class="text-center texto-cor-especial pt-3 pb-3">{{diretorio|upper}}</h1>
+    </section>
+    <section class="text-center">
+        {% for imagem in galeria %}
+        <a class="example-image-link" href="{% static diretorio %}{{'/'}}{{imagem}}"
+        data-lightbox="example-set">
+        <img class="example-image" src="{% static diretorio %}{{'/'}}{{imagem}}"  width= 100 height= 100 alt=""/>
+        </a>
+        {% endfor %}
+    </section>
+{% endblock %}
+
