@@ -16,3 +16,4 @@ Scripts
 .svn
 .env
 venv
+staticfiles
